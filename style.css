@@ -363,11 +363,6 @@ h1 em {
   width: max-content;
   align-items: center;
   gap: 0;
-  /* gap: 30px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .14em; */
   animation: ticker 28s linear infinite;
 }
 
@@ -387,7 +382,7 @@ h1 em {
 
 @keyframes ticker {
   from { transform: translateX(0%); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-25%); }
 }
 
 /* Sections */
