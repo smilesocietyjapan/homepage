@@ -575,12 +575,22 @@ h2 span {
 .detail-icon {
   flex: 0 0 35px;
   height: 35px;
-  border: 1.5px solid var(--ink);
+  border: 0;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 11px;
   font-weight: 700;
+}
+
+.detail-icon svg {
+  width: 35px;
+  height: 35px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .detail small,
@@ -604,6 +614,31 @@ h2 span {
   font-style: normal;
   font-size: 11px;
   opacity: .65;
+}
+
+.maps-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 7px 11px;
+  border: 1.5px solid var(--ink);
+  border-radius: 100px;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.maps-button span {
+  font-size: 12px;
+}
+
+.maps-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0 rgba(23, 23, 23, 0.15);
 }
 
 .language-note {
