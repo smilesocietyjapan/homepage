@@ -362,7 +362,7 @@ h1 em {
   display: flex;
   width: max-content;
   align-items: center;
-  gap: 15px;
+  gap: 0;
   /* gap: 30px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
