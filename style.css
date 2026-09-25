@@ -6,15 +6,15 @@
    ========================================================= */
 
 :root {
-  --ink: #171717;
-  --muted: #6c6c6c;
-  --paper: #fffdf8;
-  --cream: #f7f1e5;
-  --yellow: #f7d84b;
-  --pink: #f5a4b8;
-  --blue: #9ed5e8;
-  --green: #b8dca8;
-  --line: #ded8cc;
+  --ink: #183b31;
+  --muted: #5d7169;
+  --paper: #fffaf2;
+  --cream: #fdeed9;
+  --yellow: #fdeed9;
+  --pink: #ffddf8;
+  --blue: #fdeed9;
+  --green: #247c64;
+  --line: #d8cdbd;
   --white: #ffffff;
   --max: 1160px;
   --radius: 28px;
@@ -402,7 +402,7 @@ h2 span { font-weight: 400; }
 
 @keyframes ticker {
   from { transform: translateX(0); }
-  to { transform: translateX(-25%); }
+  to { transform: translateX(-33.333%); }
 }
 
 /* ---------- General sections ---------- */
@@ -622,7 +622,7 @@ h2 span { font-weight: 400; }
 .event-details {
   padding: 55px 42px;
   background: var(--yellow);
-  color: var(--ink);
+  color: var(--cream);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -676,9 +676,7 @@ h2 span { font-weight: 400; }
   gap: 8px;
   margin-top: 10px;
   padding: 7px 11px;
-  border: 1.5px solid var(--ink);
   border-radius: 100px;
-  background: var(--white);
   font-size: 10px;
   font-weight: 700;
   transition: transform .2s ease, box-shadow .2s ease;
@@ -690,7 +688,7 @@ h2 span { font-weight: 400; }
 }
 
 .language-note {
-  border-top: 1px solid rgba(23,23,23,.25);
+  border-top: 1px solid var(--cream);
   padding-top: 20px;
   font-size: 11px;
   line-height: 2;
@@ -702,7 +700,7 @@ h2 span { font-weight: 400; }
   width: 25px;
   height: 25px;
   margin-right: 4px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--cream);
   border-radius: 50%;
   font-size: 8px;
   font-weight: 700;
@@ -710,30 +708,70 @@ h2 span { font-weight: 400; }
 
 /* ---------- Social ---------- */
 
-.connect { background: var(--cream); }
-
-.connect-heading {
-  display: grid;
-  grid-template-columns: 1fr .8fr;
-  gap: 80px;
-  align-items: end;
-  margin-bottom: 55px;
+.final-cta {
+  padding: 115px 0 125px;
+  background: var(--pink);
+  position: relative;
+  overflow: hidden;
 }
 
-.connect-heading > p {
-  margin: 0;
-  color: var(--muted);
+.final-cta::before,
+.final-cta::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgba(23,23,23,.10);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.final-cta::before {
+  width: 480px;
+  height: 480px;
+  left: -300px;
+  top: -260px;
+}
+
+.final-cta::after {
+  width: 360px;
+  height: 360px;
+  right: -210px;
+  bottom: -220px;
+}
+
+.final-heading {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 55px;
+}
+
+.final-heading .section-label {
+  color: #6f4e57;
+}
+
+.final-heading h2 {
+  font-size: clamp(48px, 6vw, 76px);
+}
+
+.final-heading > p:last-child {
+  max-width: 560px;
+  margin: 20px auto 0;
   font-size: 15px;
 }
 
 .social-grid {
+  width: min(850px, 100%);
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 .social-card {
-  min-height: 365px;
+  min-height: 335px;
   padding: 25px;
   border: 1.5px solid var(--ink);
   border-radius: var(--radius);
@@ -749,9 +787,13 @@ h2 span { font-weight: 400; }
   box-shadow: 9px 9px 0 rgba(23,23,23,.11);
 }
 
-.instagram { background: var(--pink); }
-.threads { background: var(--blue); }
-.line { background: var(--green); }
+.instagram {
+  background: var(--white);
+}
+
+.line {
+  background: var(--green);
+}
 
 .social-top {
   display: flex;
@@ -765,41 +807,61 @@ h2 span { font-weight: 400; }
   opacity: .6;
 }
 
-.arrow { font-size: 22px; }
+.arrow {
+  font-size: 22px;
+}
 
 .social-icon {
   width: 62px;
   height: 62px;
-  margin: 42px 0 24px;
+  margin: 35px 0 20px;
   display: grid;
   place-items: center;
   border: 1.5px solid var(--ink);
   border-radius: 20px;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.55);
   font-family: "Space Grotesk", sans-serif;
   font-size: 28px;
   font-weight: 600;
 }
 
-.social-card h3 { font-size: 30px; }
+.social-card h3 {
+  font-size: 30px;
+}
+
+.social-purpose {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 5px 9px;
+  border: 1px solid var(--ink);
+  border-radius: 100px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  background: rgba(255,255,255,.42);
+}
 
 .social-card p {
   max-width: 310px;
-  margin: 11px 0 auto;
+  margin: 12px 0 auto;
   font-size: 13px;
   line-height: 1.55;
 }
 
 .social-card strong {
-  margin-top: 25px;
+  margin-top: 22px;
   font-size: 13px;
 }
 
 .social-note {
+  position: relative;
+  z-index: 2;
   margin: 25px 0 0;
   text-align: center;
-  color: var(--muted);
-  font-size: 12px;
+  color: #624b52;
+  font-size: 11px;
+  line-height: 1.8;
 }
 
 /* ---------- Welcome ---------- */
@@ -926,7 +988,6 @@ h2 span { font-weight: 400; }
   .hero-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
   .split { gap: 55px; }
   .journey-grid { grid-template-columns: repeat(2, 1fr); }
-  .connect-heading { gap: 40px; }
 }
 
 @media (max-width: 800px) {
@@ -990,13 +1051,12 @@ h2 span { font-weight: 400; }
 
   .event-details { padding: 42px; }
 
-  .connect-heading > p { max-width: 600px; }
 
   .social-grid { grid-template-columns: 1fr; }
 
   .social-card { min-height: 300px; }
 
-  .social-icon { margin-top: 30px; }
+  .social-icon { margin-top: 28px; }
 }
 
 @media (max-width: 560px) {
@@ -1099,4 +1159,126 @@ h2 span { font-weight: 400; }
   .button,
   .journey-card,
   .social-card { transition: none; }
+}
+
+
+/* =========================================================
+   COMMUNITY PALETTE OVERRIDES
+   #FDEED9 warm cream · #247C64 community green · #FFDDF8 soft pink
+   ========================================================= */
+
+/* Green is the primary community color; cream keeps the page calm and welcoming. */
+.hero {
+  background: var(--cream);
+}
+
+.ticker {
+  background: var(--green);
+}
+
+.journey {
+  background: var(--cream);
+}
+
+.card-yellow,
+.card-blue {
+  background: var(--cream);
+}
+
+.card-pink {
+  background: var(--pink);
+}
+
+.card-green {
+  background: var(--green);
+  color: var(--white);
+}
+
+.card-green .number {
+  color: var(--white);
+  opacity: .8;
+}
+
+.event-details {
+  background: var(--green);
+  color: var(--white);
+}
+
+.event-details .detail-icon,
+.event-details .maps-button {
+  border-color: var(--ink);
+}
+
+.event-details .maps-button {
+  color: var(--ink);
+  background: var(--white);
+}
+
+.event-details .detail em,
+.event-details .detail small {
+  color: var(--white);
+  opacity: .8;
+}
+
+.event-details .language-note {
+  border-top-color: rgba(255,255,255,.35);
+}
+
+.people {
+  background: var(--cream);
+}
+
+.quote-card {
+  background: var(--pink);
+}
+
+.final-cta {
+  background: var(--pink);
+}
+
+.instagram {
+  background: var(--cream);
+}
+
+.line {
+  background: var(--green);
+  color: var(--white);
+}
+
+.line .social-badge,
+.line .social-card p {
+  color: var(--white);
+}
+
+.line .social-icon,
+.line .social-purpose {
+  background: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.8);
+}
+
+.line .social-note {
+  color: var(--ink);
+}
+
+.social-note {
+  color: var(--ink);
+}
+
+.button-dark {
+  background: var(--green);
+}
+
+.nav-cta {
+  border-color: var(--green);
+}
+
+.hero-card {
+  border-color: var(--green);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track,
+  .person {
+    animation: none;
+  }
 }
