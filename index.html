@@ -32,13 +32,27 @@
         </a>
 
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#journey">Our Journey</a>
-          <a href="#event">Next Event</a>
-          <a href="#connect">Connect</a>
+          <a data-en="About" data-ja="概要" href="#about">About</a>
+          <a data-en="Our Journey" data-ja="イベント流れ" href="#journey"
+            >Our Journey</a
+          >
+          <a data-en="Next Event" data-ja="次回" href="#event">Next Event</a>
+          <a data-en="Connect" data-ja="つながり" href="#connect">Connect</a>
         </div>
 
-        <a class="nav-cta" href="#event">Join us <span>↗</span></a>
+        <div class="language-switcher">
+          <button onclick="changeLanguage('en')" id="btn-en">English</button>
+          <span>|</span>
+          <button onclick="changeLanguage('ja')" id="btn-ja">日本語</button>
+        </div>
+
+        <a
+          class="nav-cta"
+          data-en="Join us <span>↗</span>"
+          data-ja="参加する <span>↗</span>"
+          href="#event"
+          >Join us <span>↗</span></a
+        >
       </nav>
     </header>
 
@@ -50,27 +64,63 @@
 
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">
+            <p
+              class="eyebrow"
+              data-en="INTERNATIONAL COMMUNITY · JAPAN"
+              data-ja="国際交流コミュニティ・日本"
+            >
               <span class="eyebrow-dot"></span> INTERNATIONAL COMMUNITY · JAPAN
             </p>
 
-            <h1>
-              Different<br /><em>cultures.</em><br /><strong>One smile.</strong>
+            <h1
+              data-en="Different<br />
+              <em>cultures.</em><br />
+              <strong>One smile.</strong>"
+              data-ja="違う<em>文化.</em><br />
+              <strong>ひとつの笑顔</strong>"
+            >
+              Different<br />
+              <em>cultures.</em><br />
+              <strong>One smile.</strong>
             </h1>
 
-            <p class="hero-tagline">One smile can start a friendship.</p>
-
-            <p class="hero-text">
+            <p
+              class="hero-tagline"
+              data-en="One smile can start a friendship."
+              data-ja="笑顔から始まるつながり"
+            >
+              One smile can start a friendship.
+            </p>
+            <p
+              class="hero-text"
+              data-en="
+              A welcoming community where people from different backgrounds
+              meet, play, discover each other's cultures, and create genuine
+              connections.
+            "
+              data-ja="さまざまな背景を持つ人々が出会い、遊び、お互いの文化を知り、本当のつながりを育むコミュニティです。"
+            >
               A welcoming community where people from different backgrounds
               meet, play, discover each other's cultures, and create genuine
               connections.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-dark" href="#event"
+              <a
+                class="button button-dark"
+                data-en="Join the next event"
+                data-ja="イベント参加"
+                href="#event"
                 >Join the next event <span>→</span></a
               >
-              <a class="text-link" href="#about">Discover our story ↓</a>
+              <a
+                class="text-link"
+                class="button button-dark"
+                data-en="Discover our story ↓"
+                data-ja="私たちについて ↓"
+                href="#about"
+                >Discover our story ↓</a
+              >
             </div>
           </div>
 
@@ -104,7 +154,12 @@
 
             <div class="hero-card">
               <span class="card-icon">☺</span>
-              <div>
+              <div
+                data-en="<strong>Different cultures.</strong>
+                <small>One shared smile.</small>"
+                data-ja="<strong>違う文化</strong>
+                <small>ひとつの笑顔</small>"
+              >
                 <strong>Different cultures.</strong>
                 <small>One shared smile.</small>
               </div>
@@ -117,24 +172,32 @@
       <section class="ticker" aria-label="Community journey">
         <div class="ticker-track">
           <div class="ticker-group">
-            <span>MEET</span><i>✦</i><span>PLAY</span><i>✦</i>
-            <span>DISCOVER</span><i>✦</i><span>CONNECT</span><i>✦</i>
-            <span>SMILE</span><i>✦</i>
+            <span data-en="MEET" data-ja="出会い">MEET</span><i>✦</i
+            ><span data-en="PLAY" data-ja="遊び">PLAY</span><i>✦</i>
+            <span data-en="DISCOVER" data-ja="発見">DISCOVER</span><i>✦</i
+            ><span data-en="CONNECT" data-ja="つながり">CONNECT</span><i>✦</i>
+            <span data-en="SMILE" data-ja="笑顔">SMILE</span><i>✦</i>
           </div>
           <div class="ticker-group">
-            <span>MEET</span><i>✦</i><span>PLAY</span><i>✦</i>
-            <span>DISCOVER</span><i>✦</i><span>CONNECT</span><i>✦</i>
-            <span>SMILE</span><i>✦</i>
+            <span data-en="MEET" data-ja="出会い">MEET</span><i>✦</i
+            ><span data-en="PLAY" data-ja="遊び">PLAY</span><i>✦</i>
+            <span data-en="DISCOVER" data-ja="発見">DISCOVER</span><i>✦</i
+            ><span data-en="CONNECT" data-ja="つながり">CONNECT</span><i>✦</i>
+            <span data-en="SMILE" data-ja="笑顔">SMILE</span><i>✦</i>
           </div>
           <div class="ticker-group">
-            <span>MEET</span><i>✦</i><span>PLAY</span><i>✦</i>
-            <span>DISCOVER</span><i>✦</i><span>CONNECT</span><i>✦</i>
-            <span>SMILE</span><i>✦</i>
+            <span data-en="MEET" data-ja="出会い">MEET</span><i>✦</i
+            ><span data-en="PLAY" data-ja="遊び">PLAY</span><i>✦</i>
+            <span data-en="DISCOVER" data-ja="発見">DISCOVER</span><i>✦</i
+            ><span data-en="CONNECT" data-ja="つながり">CONNECT</span><i>✦</i>
+            <span data-en="SMILE" data-ja="笑顔">SMILE</span><i>✦</i>
           </div>
           <div class="ticker-group">
-            <span>MEET</span><i>✦</i><span>PLAY</span><i>✦</i>
-            <span>DISCOVER</span><i>✦</i><span>CONNECT</span><i>✦</i>
-            <span>SMILE</span><i>✦</i>
+            <span data-en="MEET" data-ja="出会い">MEET</span><i>✦</i
+            ><span data-en="PLAY" data-ja="遊び">PLAY</span><i>✦</i>
+            <span data-en="DISCOVER" data-ja="発見">DISCOVER</span><i>✦</i
+            ><span data-en="CONNECT" data-ja="つながり">CONNECT</span><i>✦</i>
+            <span data-en="SMILE" data-ja="笑顔">SMILE</span><i>✦</i>
           </div>
         </div>
       </section>
@@ -143,21 +206,52 @@
       <section class="section about" id="about">
         <div class="container split">
           <div>
-            <p class="section-label">01 / DIFFERENT CULTURES</p>
-            <h2>We don't have to be the same to <span>connect.</span></h2>
+            <p
+              class="section-label"
+              data-en="01 / DIFFERENT CULTURES"
+              data-ja="01 / 違う文化"
+            >
+              01 / DIFFERENT CULTURES
+            </p>
+            <h2
+              data-en="We don't have to be the same to <span>connect.</span>"
+              data-ja="つながるには<br />違ってもいい"
+            >
+              We don't have to be the same to <span>connect.</span>
+            </h2>
           </div>
 
           <div class="about-copy">
-            <p class="lead">
+            <p
+              class="lead"
+              data-en="
+              Different languages. Different cultures. Different stories.
+              Sometimes all it takes to cross that distance is one smile.
+            "
+              data-ja="言葉も、文化も、物語も違う。そんな距離を越えるのに、必要なのはたったひとつの笑顔かもしれません。"
+            >
               Different languages. Different cultures. Different stories.
               Sometimes all it takes to cross that distance is one smile.
             </p>
-            <p>
+            <p
+              data-en="
+              SMILE SOCIETY JAPAN creates small, friendly spaces where Japanese
+              and international residents can meet, laugh, discover different
+              perspectives, and build genuine friendships.
+            "
+              data-ja="SMILE SOCIETY JAPANは、様々な出身の方が出会い、笑い合い、異なる視点を知り、純粋なつながりを育める、気軽でフレンドリーな場をつくっています。"
+            >
               SMILE SOCIETY JAPAN creates small, friendly spaces where Japanese
               and international residents can meet, laugh, discover different
               perspectives, and build genuine friendships.
             </p>
-            <p>
+            <p
+              data-en="
+              You don't need perfect Japanese. You don't need perfect English.
+              You just need a little curiosity.
+            "
+              data-ja="完璧な日本語も英語も必要ありません。必要なのは、ほんの少しの好奇心。"
+            >
               You don't need perfect Japanese. You don't need perfect English.
               You just need a little curiosity.
             </p>
@@ -167,24 +261,28 @@
         <div class="community-photos container">
           <div class="community-photo photo-secondary">
             <img
-              src="images/event-01.jpg"
               alt="SMILE SOCIETY JAPAN international exchange event"
+              src="images/event-01.jpg"
             />
-            <span>DIFFERENT STORIES</span>
+            <span data-en="DIFFERENT STORIES" data-ja="それぞれの物語"
+              >DIFFERENT STORIES</span
+            >
           </div>
           <div class="community-photo photo-secondary">
             <img
-              src="images/event-02.jpg"
               alt="Participants enjoying a SMILE SOCIETY JAPAN event"
+              src="images/event-02.jpg"
             />
-            <span>SHARED MOMENTS</span>
+            <span data-en="SHARED MOMENTS" data-ja="共有するひととき"
+              >SHARED MOMENTS</span
+            >
           </div>
           <div class="community-photo photo-main">
             <img
-              src="images/event-03.jpg"
               alt="People sharing cultures at a SMILE SOCIETY JAPAN event"
+              src="images/event-03.jpg"
             />
-            <span>ONE SMILE</span>
+            <span data-en="ONE SMILE" data-ja="ひとつの笑顔">ONE SMILE</span>
           </div>
         </div>
       </section>
@@ -194,10 +292,25 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="section-label">02 / THE FRIENDSHIP JOURNEY</p>
-              <h2>From “hello” to<br /><span>“see you again.”</span></h2>
+              <p
+                class="section-label"
+                data-en="02 / THE FRIENDSHIP JOURNEY"
+                data-ja="02 / つながるまでの道"
+              >
+                02 / THE FRIENDSHIP JOURNEY
+              </p>
+              <h2
+                data-en="From “hello” to<br /><span>“see you again.”</span>"
+                data-ja="「はじめまして」からの<br /><span>「またね！」</span>"
+              >
+                From “hello” to<br /><span>“see you again.”</span>
+              </h2>
             </div>
-            <p class="heading-note">
+            <p
+              class="heading-note"
+              data-en="Every connection starts<br />with a small moment."
+              data-ja="つながりは<br />小さな出来事から始まる"
+            >
               Every connection starts<br />with a small moment.
             </p>
           </div>
@@ -219,8 +332,14 @@
                   />
                 </svg>
               </div>
-              <h3>Meet</h3>
-              <p>
+              <h3 data-en="Meet" data-ja="出会い">Meet</h3>
+              <p
+                data-en="
+                Start with a simple hello. Easy icebreakers make first
+                encounters feel natural.
+              "
+                data-ja="簡単な挨拶から始めよう。気軽なアイスブレイクで、初めての出会いも自然なものに。"
+              >
                 Start with a simple hello. Easy icebreakers make first
                 encounters feel natural.
               </p>
@@ -260,8 +379,14 @@
                   />
                 </svg>
               </div>
-              <h3>Play</h3>
-              <p>
+              <h3 data-en="Play" data-ja="遊び">Play</h3>
+              <p
+                data-en="
+                Play together, laugh together, and create shared moments beyond
+                language.
+              "
+                data-ja="一緒に遊び、一緒に笑い、言葉を越えた思い出をつくろう。"
+              >
                 Play together, laugh together, and create shared moments beyond
                 language.
               </p>
@@ -394,8 +519,14 @@
                   </g>
                 </svg>
               </div>
-              <h3>Discover</h3>
-              <p>
+              <h3 data-en="Discover" data-ja="発見">Discover</h3>
+              <p
+                data-en="
+                Share everyday experiences, traditions, opinions, and the
+                stories behind them.
+              "
+                data-ja="日常の体験や伝統、考え方、その背景にある物語を共有しよう。"
+              >
                 Share everyday experiences, traditions, opinions, and the
                 stories behind them.
               </p>
@@ -455,8 +586,14 @@
                   </g>
                 </svg>
               </div>
-              <h3>Connect</h3>
-              <p>
+              <h3 data-en="Connect" data-ja="つながり">Connect</h3>
+              <p
+                data-en="
+                Keep in touch, meet again, and become part of a growing
+                international community.
+              "
+                data-ja="連絡を取り合い、また会い、広がる国際交流コミュニティの一員になろう。"
+              >
                 Keep in touch, meet again, and become part of a growing
                 international community.
               </p>
@@ -465,7 +602,12 @@
 
           <div class="journey-note">
             <span>😊</span>
-            <p>
+            <p
+              data-en="<strong>Smile is the thread through it all.</strong> 
+              You never know where one smile might lead."
+              data-ja="<strong>笑顔はそのすべてをつなぐツール.</strong> 
+              ひとつの笑顔で無限な可能性が広がる."
+            >
               <strong>Smile is the thread through it all.</strong> You never
               know where one smile might lead.
             </p>
@@ -478,14 +620,42 @@
         <div class="container">
           <div class="event-panel">
             <div class="event-main">
-              <p class="section-label">03 / NEXT EVENT</p>
+              <p
+                class="section-label"
+                data-en="03 / NEXT EVENT"
+                data-ja="03 / 次回のイベント"
+              >
+                03 / NEXT EVENT
+              </p>
               <h3>WORLD TOUR SESSION: UZBEKISTAN</h3>
-              <div class="event-date">
+              <div
+                class="event-date"
+                data-en="<strong>Oct</strong><strong>10,</strong><strong>2026</strong>"
+                data-ja="<strong>2026/10/10</strong>"
+              >
                 <strong>Oct</strong><strong>10,</strong><strong>2026</strong>
               </div>
-              <p class="event-kicker">YOUR NEXT FRIENDSHIP MIGHT START HERE.</p>
-              <h2>Come as<br />you are.</h2>
-              <p class="event-intro">
+              <p
+                class="event-kicker"
+                data-en="YOUR NEXT FRIENDSHIP MIGHT START HERE."
+                data-ja="次のつながりはここから始まる"
+              >
+                YOUR NEXT FRIENDSHIP MIGHT START HERE.
+              </p>
+              <h2
+                data-en="Come as<br />you are."
+                data-ja="ありのままの自分で参加を"
+              >
+                Come as<br />you are.
+              </h2>
+              <p
+                class="event-intro"
+                data-en="
+                Meet new people, share your culture, play together, and enjoy an
+                afternoon of smiles and conversations in a relaxed atmosphere.
+              "
+                data-ja="新しい人と出会い、文化を共有し、一緒に遊びながら、リラックスした雰囲気の中で笑顔と会話を楽しむ午後を過ごしましょう。"
+              >
                 Meet new people, share your culture, play together, and enjoy an
                 afternoon of smiles and conversations in a relaxed atmosphere.
               </p>
@@ -494,6 +664,8 @@
                 href="https://www.instagram.com/smilesociety_n.n/"
                 target="_blank"
                 rel="noopener"
+                data-en="Join from Instagram"
+                data-ja="インスタから参加"
               >
                 Join from Instagram <span>→</span>
               </a>
@@ -502,6 +674,8 @@
                 href="https://line.me/R/ti/p/@829habva"
                 target="_blank"
                 rel="noopener"
+                data-en="Join from Line"
+                data-ja="ラインから参加"
               >
                 Join from Line <span>→</span>
               </a>
@@ -515,7 +689,10 @@
                     <path d="M12 7.5v5l3.2 2" />
                   </svg>
                 </span>
-                <div><small>TIME</small><strong>14:00 – 16:00</strong></div>
+                <div>
+                  <small data-en="TIME" data-ja="時間">TIME</small
+                  ><strong>14:00 – 16:00</strong>
+                </div>
               </div>
 
               <div class="detail">
@@ -528,13 +705,24 @@
                   </svg>
                 </span>
                 <div>
-                  <small>VENUE</small>
+                  <small data-en="VENUE" data-ja="会場">VENUE</small>
                   <strong
+                    data-en="Near Suitengumae Station <br />(Tokyo Metro Hanzomon
+                    Line)"
+                    data-ja="水天宮前駅（半蔵門線）周辺"
                     >Near Suitengumae Station <br />(Tokyo Metro Hanzomon
                     Line)</strong
                   >
-                  <em>Nihonbashi, Chuo City, Tokyo · Japan</em>
-                  <em>*Will be shared to participants by email</em>
+                  <em
+                    data-en="Nihonbashi, Chuo City, Tokyo · Japan"
+                    data-ja="東京都中央区日本橋・日本"
+                    >Nihonbashi, Chuo City, Tokyo · Japan</em
+                  >
+                  <em
+                    data-en="*Will be shared to participants by email"
+                    data-ja="※詳細は参加者のみへメールで共有"
+                    >*Will be shared to participants by email</em
+                  >
                   <!--
                   <strong>Garage of Dreams</strong>
                   <em>Adachi, Tokyo · Japan</em>
@@ -560,9 +748,16 @@
                   </svg>
                 </span>
                 <div>
-                  <small>PARTICIPATION</small
-                  ><strong>Students ¥500 / Others ¥1,000</strong
-                  ><em>mini snacks included</em>
+                  <small data-en="PARICIPATION" data-ja="参加費"
+                    >PARTICIPATION</small
+                  ><strong
+                    data-en="Students ¥500 / Others ¥1,000"
+                    data-ja="学生 ¥500 / その他 ¥1,000"
+                  >
+                    Students ¥500 / Others ¥1,000</strong
+                  ><em data-en="mini snacks included" data-ja="プチお菓子付き"
+                    >mini snacks included</em
+                  >
                 </div>
               </div>
 
@@ -576,12 +771,22 @@
                   </svg>
                 </span>
                 <div>
-                  <small>CAPACITY</small><strong>Maximum 8 people</strong
-                  ><em>First come, first served</em>
+                  <small data-en="CAPACITY" data-ja="参加人数">CAPACITY</small>
+                  <strong data-en="Max. 8 people" data-ja="最大８人"
+                    >Max. 8 people</strong
+                  ><em data-en="First come, first served" data-ja="早い順"
+                    >First come, first served</em
+                  >
                 </div>
               </div>
 
-              <div class="language-note">
+              <div
+                class="language-note"
+                data-en="<span>JP</span><span>EN</span>
+                Japanese · English mixed event"
+                data-ja="<span>日</span><span>英</span>
+                日本語 · 英語 イベント"
+              >
                 <span>JP</span><span>EN</span>
                 Japanese · English mixed event
               </div>
@@ -594,23 +799,52 @@
       <section class="section people">
         <div class="container people-layout">
           <div class="people-copy">
-            <p class="section-label">04 / EVERYONE IS WELCOME</p>
-            <h2>Come alone.<br /><span>Leave connected.</span></h2>
-            <p>
+            <p
+              class="section-label"
+              data-en="04 / EVERYONE IS WELCOME"
+              data-ja="04 / 誰でも大歓迎"
+            >
+              04 / EVERYONE IS WELCOME
+            </p>
+            <h2
+              data-en="Come alone.<br /><span>Leave connected.</span>"
+              data-ja="一人できて、<br /><span>一緒に帰る.</span>"
+            >
+              Come alone.<br /><span>Leave connected.</span>
+            </h2>
+            <p
+              data-en="Whether you're Japanese, living in Japan from another country, a
+              student, a working professional, or simply someone who enjoys
+              meeting new people — there is a place for you here."
+              data-ja="日本人の方も、海外から日本に来て暮らしている方も、学生の方も、社会人の方も、
+              そして新しい人との出会いを楽しにしている方も、誰もが安心して参加できる場所です。"
+            >
               Whether you're Japanese, living in Japan from another country, a
               student, a working professional, or simply someone who enjoys
               meeting new people — there is a place for you here.
             </p>
             <div class="mini-tags">
-              <span>Students</span><span>International residents</span>
-              <span>Locals</span><span>Solo participants</span
-              ><span>Curious minds</span>
+              <span data-en="Students" data-ja="学生">Students</span
+              ><span data-en="International residents" data-ja="外国人"
+                >International residents</span
+              >
+              <span data-en="Locals" data-ja="日本人">Locals</span
+              ><span data-en="Solo participants" data-ja="一人参加"
+                >Solo participants</span
+              ><span data-en="Curious minds" data-ja="好奇心の持ち主"
+                >Curious minds</span
+              >
             </div>
           </div>
 
           <div class="quote-card">
             <div class="quote-mark">“</div>
-            <p>
+            <p
+              data-en="
+              You don't have to speak the same language to start a connection.
+            "
+              data-ja="同じ言葉を話さなくても、つながりは始められる。"
+            >
               You don't have to speak the same language to start a connection.
             </p>
             <div class="smile-face">☺</div>
@@ -622,9 +856,23 @@
       <section class="final-cta" id="connect">
         <div class="container">
           <div class="final-heading">
-            <p class="section-label">LET'S STAY CONNECTED</p>
-            <h2>One smile can<br /><span>start a friendship.</span></h2>
-            <p>
+            <p
+              class="section-label"
+              data-en="LET'S STAY CONNECTED"
+              data-ja="ずっとつながろう"
+            >
+              LET'S STAY CONNECTED
+            </p>
+            <h2
+              data-en="One smile can<br /><span>start a friendship.</span>"
+              data-ja="ひとつの笑顔からのつながり"
+            >
+              One smile can<br /><span>start a friendship.</span>
+            </h2>
+            <p
+              data-en="Different cultures. One community. Maybe your next friendship starts here."
+              data-ja="違う文化。一つのコミュニティ。次のつながりはここから始まる"
+            >
               Different cultures. One community. Maybe your next friendship
               starts here.
             </p>
@@ -642,18 +890,31 @@
                 <span class="arrow">↗</span>
               </div>
               <div class="social-icon">◎</div>
-              <h3>Instagram</h3>
-              <span class="social-purpose">SEE &amp; JOIN</span>
-              <p>
+              <h3 data-en="Instagram" data-ja="インスタ">Instagram</h3>
+              <span
+                class="social-purpose"
+                data-en="SEE &amp; JOIN"
+                data-ja="拝見 &amp; 参加"
+                >SEE &amp; JOIN</span
+              >
+              <p
+                data-en="See the smiles, discover the atmosphere, and find your next
+                event."
+                data-ja="笑顔を見て、イベントの雰囲気を知り、次のイベントを見つけよう。"
+              >
                 See the smiles, discover the atmosphere, and find your next
                 event.
               </p>
-              <strong>Follow &amp; Join →</strong>
+              <strong
+                data-en="Follow &amp; Join →"
+                data-ja="フォロー &amp; 参加 →"
+                >Follow &amp; Join →</strong
+              >
             </a>
 
             <a
               class="social-card line"
-              href="YOUR_LINE_URL_HERE"
+              href="https://line.me/R/ti/p/@829habva"
               target="_blank"
               rel="noopener"
             >
@@ -662,17 +923,31 @@
                 <span class="arrow">↗</span>
               </div>
               <div class="social-icon">◌</div>
-              <h3>Official LINE</h3>
-              <span class="social-purpose">JOIN</span>
-              <p>
+              <h3 data-en="Official LINE" data-ja="公式ライン">
+                Official LINE
+              </h3>
+              <span class="social-purpose" data-en="JOIN" data-ja="参加"
+                >JOIN</span
+              >
+              <p
+                data-en="Stay connected with SMILE SOCIETY JAPAN and receive our latest
+                event updates."
+                data-ja="SMILE SOCIETY JAPANとつながり、最新のイベント情報を受け取ろう。"
+              >
                 Stay connected with SMILE SOCIETY JAPAN and receive our latest
                 event updates.
               </p>
-              <strong>Join →</strong>
+              <strong data-en="Add &amp; Join →" data-ja="追加 &amp; 参加 →"
+                >Add &amp; Join →</strong
+              >
             </a>
           </div>
 
-          <p class="social-note">
+          <p
+            class="social-note"
+            data-en="📣 Event updates are shared on both Instagram and LINE."
+            data-ja="📣 最新のイベント情報はインスタとラインで共有します。"
+          >
             📣 Event updates are shared on both Instagram and LINE.<br />
           </p>
         </div>
@@ -689,9 +964,41 @@
           />
           <span>SMILE SOCIETY <b>JAPAN</b></span>
         </div>
-        <p>Different Cultures · One Smile · Friendship</p>
+        <p
+          data-en="Different Cultures · One Smile · Friendship"
+          data-ja="違う文化・ひとつの笑顔・つながり"
+        >
+          Different Cultures · One Smile · Friendship
+        </p>
         <p>© 2026 SMILE SOCIETY JAPAN</p>
       </div>
     </footer>
+
+    <script>
+      function changeLanguage(lang) {
+        // Change all translated text
+        document.querySelectorAll("[data-ja][data-en]").forEach((element) => {
+          element.innerHTML = element.getAttribute(`data-${lang}`);
+        });
+
+        // Update the page language
+        document.documentElement.lang = lang;
+
+        // Update active button
+        document
+          .getElementById("btn-ja")
+          .classList.toggle("active", lang === "ja");
+        document
+          .getElementById("btn-en")
+          .classList.toggle("active", lang === "en");
+
+        // Save the selected language
+        localStorage.setItem("language", lang);
+      }
+
+      // Load saved language or default to English
+      const savedLanguage = localStorage.getItem("language") || "en";
+      changeLanguage(savedLanguage);
+    </script>
   </body>
 </html>

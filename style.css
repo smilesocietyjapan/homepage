@@ -1277,3 +1277,31 @@ h2 span { font-weight: 400; }
     animation: none;
   }
 }
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  color: #183b31;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  opacity: 0.6;
+}
+
+.language-switcher button.active {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.language-switcher span {
+  color: #183b31;
+  opacity: 0.4;
+}
