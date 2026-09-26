@@ -10,9 +10,9 @@
   --muted: #5d7169;
   --paper: #fffaf2;
   --cream: #fdeed9;
-  --yellow: #fdeed9;
+  --yellow: #f4b942;
   --pink: #ffddf8;
-  --blue: #fdeed9;
+  --blue: #A9C9E8;
   --green: #247c64;
   --line: #d8cdbd;
   --white: #ffffff;
@@ -587,7 +587,7 @@ h2 span { font-weight: 400; }
   align-items: baseline;
   gap: 11px;
   margin: 10px 0 28px;
-  color: var(--yellow);
+  color: var(--cream);
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   letter-spacing: .08em;
@@ -1177,11 +1177,6 @@ h2 span { font-weight: 400; }
 }
 
 .journey {
-  background: var(--cream);
-}
-
-.card-yellow,
-.card-blue {
   background: var(--cream);
 }
 
